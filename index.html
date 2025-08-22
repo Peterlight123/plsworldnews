@@ -1,1 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breaking news, world events, politics, technology, sports, and business coverage. Stay informed with PLS World News - your trusted source for comprehensive journalism.">
+    <meta name="keywords" content="news, breaking news, world news, politics, technology, sports, business, current events">
+    <meta name="author" content="PLS World News">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PLS World News - Breaking News & Global Coverage">
+    <meta property="og:description" content="Stay informed with breaking news, world events, politics, technology, sports, and business coverage from PLS World News.">
+    <meta property="og:image" content="https://plsworldnews.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://plsworldnews.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PLS World News">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PLS World News - Breaking News & Global Coverage">
+    <meta name="twitter:description" content="Stay informed with breaking news, world events, politics, technology, sports, and business coverage.">
+    <meta name="twitter:image" content="https://plsworldnews.com/assets/images/twitter-card.jpg">
+    <meta name="twitter:site" content="@plsworldnews">
+    
+    <title>PLS World News - Breaking News & Global Coverage</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsMediaOrganization",
+        "name": "PLS World News",
+        "url": "https://plsworldnews.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://plsworldnews.com/assets/images/logo.png",
+            "width": 200,
+            "height": 60
+        },
+        "description": "Breaking news, world events, politics, technology, sports, and business coverage.",
+        "sameAs": [
+            "https://facebook.com/plsworldnews",
+            "https://twitter.com/plsworldnews",
+            "https://instagram.com/plsworldnews",
+            "https://youtube.com/plsworldnews"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-NEWS-PLS",
+            "contactType": "customer service",
+            "email": "contact@plsworldnews.com"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="assets/images/logo.png" alt="PLS World News">
+            </div>
+            <div class="loading-spinner"></div>
+            <p>Loading latest news...</p>
+        </div>
+    </div>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-ticker" id="breakingNewsTicker">
+        <div class="ticker-content">
+            <span class="ticker-label">
+                <i class="fas fa-bolt"></i> BREAKING
+            </span>
+            <div class="ticker-text">
+                <span>Major economic summit concludes with historic trade agreements...</span>
+                <span>Technology breakthrough promises revolutionary changes in healthcare...</span>
+                <span>International climate accord signed by 50+ nations...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="date-weather">
+                        <span class="current-date" id="currentDate"></span>
+                        <span class="weather-info" id="weatherInfo">
+                            <i class="fas fa-cloud-sun"></i> 24°C
+                        </span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com/plsworldnews" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/plsworldnews" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/plsworldnews" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/plsworldnews" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/plsworldnews" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="PLS World News">
+                            <div class="logo-text">
+                                <h1>PLS World News</h1>
+                                <span>Truth • Integrity • Excellence</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <div class="search-container">
+                            <form class="search-form" action="search.html" method="GET">
+                                <input type="text" name="q" placeholder="Search news..." required>
+                                <button type="submit" aria-label="Search">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div class="header-buttons">
+                            <button class="newsletter-btn" onclick="openNewsletterModal()">
+                                <i class="fas fa-envelope"></i>
+                                <span>Subscribe</span>
+                            </button>
+                            <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="dropdown">
+                        <a href="world.html"><i class="fas fa-globe"></i> World <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="world/africa.html">Africa</a></li>
+                            <li><a href="world/asia.html">Asia</a></li>
+                            <li><a href="world/europe.html">Europe</a></li>
+                            <li><a href="world/americas.html">Americas</a></li>
+                            <li><a href="world/middle-east.html">Middle East</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="politics.html"><i class="fas fa-landmark"></i> Politics <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="politics/elections.html">Elections</a></li>
+                            <li><a href="politics/government.html">Government</a></li>
+                            <li><a href="politics/policy.html">Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="technology.html"><i class="fas fa-microchip"></i> Technology <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="technology/ai.html">Artificial Intelligence</a></li>
+                            <li><a href="technology/cybersecurity.html">Cybersecurity</a></li>
+                            <li><a href="technology/innovation.html">Innovation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="business.html"><i class="fas fa-chart-line"></i> Business</a></li>
+                    <li><a href="sports.html"><i class="fas fa-futbol"></i> Sports</a></li>
+                    <li><a href="health.html"><i class="fas fa-heartbeat"></i> Health</a></li>
+                    <li><a href="entertainment.html"><i class="fas fa-film"></i> Entertainment</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Featured Story -->
+                    <article class="hero-featured">
+                        <div class="hero-image">
+                            <img src="assets/images/hero-main.jpg" alt="Featured News">
+                            <div class="hero-overlay">
+                                <span class="category-tag politics">Politics</span>
+                                <h2 class="hero-title">
+                                    <a href="article/major-political-development.html">
+                                        Major Political Development Reshapes International Relations
+                                    </a>
+                                </h2>
+                                <p class="hero-excerpt">
+                                    In a groundbreaking move that could reshape global politics, world leaders gather for unprecedented summit discussions...
+                                </p>
+                                <div class="hero-meta">
+                                    <span class="author">
+                                        <i class="fas fa-user"></i> Sarah Johnson
+                                    </span>
+                                    <span class="date">
+                                        <i class="fas fa-clock"></i> 2 hours ago
+                                    </span>
+                                    <span class="reading-time">
+                                        <i class="fas fa-book-open"></i> 5 min read
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Secondary Stories -->
+                    <div class="hero-secondary">
+                        <article class="hero-card">
+                            <div class="card-image">
+                                <img src="assets/images/hero-2.jpg" alt="Technology News">
+                                <span class="category-tag technology">Technology</span>
+                            </div>
+                            <div class="card-content">
+                                <h3><a href="article/tech-breakthrough.html">Revolutionary AI Breakthrough Changes Everything</a></h3>
+                                <div class="card-meta">
+                                    <span><i class="fas fa-clock"></i> 4 hours ago</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="hero-card">
+                            <div class="card-image">
+                                <img src="assets/images/hero-3.jpg" alt="Business News">
+                                <span class="category-tag business">Business</span>
+                            </div>
+                            <div class="card-content">
+                                <h3><a href="article/market-surge.html">Global Markets Surge Following Economic Reforms</a></h3>
+                                <div class="card-meta">
+                                    <span><i class="fas fa-clock"></i> 6 hours ago</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="hero-card">
+                            <div class="card-image">
+                                <img src="assets/images/hero-4.jpg" alt="World News">
+                                <span class="category-tag world">World</span>
+                            </div>
+                            <div class="card-content">
+                                <h3><a href="article/climate-action.html">Historic Climate Agreement Signed by 50+ Nations</a></h3>
+                                <div class="card-meta">
+                                    <span><i class="fas fa-clock"></i> 8 hours ago</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advertisement Banner -->
+        <section class="ad-section">
+            <div class="container">
+                <div class="ad-banner">
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-content">
+                        <!-- Replace with your actual ad code -->
+                        <img src="assets/images/ad-banner-728x90.jpg" alt="Advertisement" class="ad-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="latest-news">
+            <div class="container">
+                <div class="content-grid">
+                    <!-- Main Content -->
+                    <div class="main-column">
+                        <div class="section-header">
+                            <h2><i class="fas fa-newspaper"></i> Latest News</h2>
+                            <div class="section-tabs">
+                                <button class="tab-btn active" data-category="all">All</button>
+                                <button class="tab-btn" data-category="trending">Trending</button>
+                                <button class="tab-btn" data-category="breaking">Breaking</button>
+                            </div>
+                        </div>
+
+                        <div class="news-grid" id="newsGrid">
+                            <!-- News Article 1 -->
+                            <article class="news-card">
+                                <div class="news-image">
+                                    <img src="assets/images/news-1.jpg" alt="News Image">
+                                    <span class="category-tag world">World</span>
+                                    <div class="trending-badge">
+                                        <i class="fas fa-fire"></i> Trending
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    <h3><a href="article/international-summit.html">International Summit Addresses Global Challenges</a></h3>
+                                    <p>World leaders convene to discuss pressing issues including climate change, economic recovery, and international security...</p>
+                                    <div class="news-meta">
+                                        <span class="author">
+                                            <img src="assets/images/author-1.jpg" alt="Author">
+                                            Michael Chen
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-clock"></i> 3 hours ago
+                                        </span>
+                                        <span class="comments">
+                                            <i class="fas fa-comments"></i> 24
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- News Article 2 -->
+                            <article class="news-card">
+                                <div class="news-image">
+                                    <img src="assets/images/news-2.jpg" alt="News Image">
+                                    <span class="category-tag technology">Technology</span>
+                                </div>
+                                <div class="news-content">
+                                    <h3><a href="article/space-mission.html">Historic Space Mission Launches Successfully</a></h3>
+                                    <p>A groundbreaking space exploration mission takes off, promising new discoveries about our universe and potential for future colonization...</p>
+                                    <div class="news-meta">
+                                        <span class="author">
+                                            <img src="assets/images/author-2.jpg" alt="Author">
+                                            Dr. Emily Rodriguez
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-clock"></i> 5 hours ago
+                                        </span>
+                                        <span class="comments">
+                                            <i class="fas fa-comments"></i> 18
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- News Article 3 -->
+                            <article class="news-card">
+                                <div class="news-image">
+                                    <img src="assets/images/news-3.jpg" alt="News Image">
+                                    <span class="category-tag business">Business</span>
+                                    <div class="breaking-badge">
+                                        <i class="fas fa-bolt"></i> Breaking
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    <h3><a href="article/economic-growth.html">Unprecedented Economic Growth Reported Globally</a></h3>
+                                    <p>Major economies show remarkable recovery with GDP growth exceeding expectations, signaling strong post-pandemic resilience...</p>
+                                    <div class="news-meta">
+                                        <span class="author">
+                                            <img src="assets/images/author-3.jpg" alt="Author">
+                                            James Wilson
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-clock"></i> 1 hour ago
+                                        </span>
+                                        <span class="comments">
+                                            <i class="fas fa-comments"></i> 42
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- News Article 4 -->
+                            <article class="news-card">
+                                <div class="news-image">
+                                    <img src="assets/images/news-4.jpg" alt="News Image">
+                                    <span class="category-tag health">Health</span>
+                                </div>
+                                <div class="news-content">
+                                    <h3><a href="article/medical-breakthrough.html">Medical Breakthrough Offers Hope for Millions</a></h3>
+                                    <p>Researchers announce a significant advancement in treatment options, potentially revolutionizing healthcare for chronic conditions...</p>
+                                    <div class="news-meta">
+                                        <span class="author">
+                                            <img src="assets/images/author-4.jpg" alt="Author">
+                                            Dr. Lisa Thompson
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-clock"></i> 7 hours ago
+                                        </span>
+                                        <span class="comments">
+                                            <i class="fas fa-comments"></i> 31
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- News Article 5 -->
+                            <article class="news-card">
+                                <div class="news-image">
+                                    <img src="assets/images/news-5.jpg" alt="News Image">
+                                    <span class="category-tag sports">Sports</span>
+                                </div>
+                                <div class="news-content">
+                                    <h3><a href="article/championship-victory.html">Stunning Championship Victory Breaks Records</a></h3>
+                                    <p>An unexpected underdog story unfolds as the championship match delivers one of the most memorable performances in sports history...</p>
+                                    <div class="news-meta">
+                                        <span class="author">
+                                            <img src="assets/images/author-5.jpg" alt="Author">
+                                            Alex Martinez
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-clock"></i> 4 hours ago
+                                        </span>
+                                        <span class="comments">
+                                            <i class="fas fa-comments"></i> 67
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- News Article 6 -->
+                            <article class="news-card">
+                                <div class="news-image">
+                                    <img src="assets/images/news-6.jpg" alt="News Image">
+                                    <span class="category-tag entertainment">Entertainment</span>
+                                </div>
+                                <div class="news-content">
+                                    <h3><a href="article/film-festival.html">International Film Festival Showcases Diverse Talent</a></h3>
+                                    <p>The annual film festival brings together creators from around the world, celebrating diversity and innovation in cinema...</p>
+                                    <div class="news-meta">
+                                        <span class="author">
+                                            <img src="assets/images/author-6.jpg" alt="Author">
+                                            Sophie Anderson
+                                        </span>
+                                        <span class="date">
+                                            <i class="fas fa-clock"></i> 6 hours ago
+                                        </span>
+                                        <span class="comments">
+                                            <i class="fas fa-comments"></i> 15
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Load More Button -->
+                        <div class="load-more-section">
+                            <button class="load-more-btn" onclick="loadMoreNews()">
+                                <i class="fas fa-plus"></i> Load More News
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <!-- Trending Topics -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">
+                                <i class="fas fa-fire"></i> Trending Topics
+                            </h3>
+                            <div class="trending-topics">
+                                <a href="search.html?q=climate+summit" class="trending-tag">#ClimateSummit</a>
+                                <a href="search.html?q=space+exploration" class="trending-tag">#SpaceExploration</a>
+                                <a href="search.html?q=ai+breakthrough" class="trending-tag">#AIBreakthrough</a>
+                                <a href="search.html?q=economic+recovery" class="trending-tag">#EconomicRecovery</a>
+                                <a href="search.html?q=healthcare+innovation" class="trending-tag">#HealthcareInnovation</a>
+                                <a href="search.html?q=renewable+energy" class="trending-tag">#RenewableEnergy</a>
+                            </div>
+                        </div>
+
+                        <!-- Advertisement -->
+                        <div class="sidebar-widget ad-widget">
+                            <div class="ad-label">Advertisement</div>
+                            <div class="ad-content">
+                                <img src="assets/images/ad-sidebar-300x250.jpg" alt="Advertisement">
+                            </div>
+                        </div>
+
+                        <!-- Popular Articles -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">
+                                <i class="fas fa-chart-line"></i> Most Popular
+                            </h3>
+                            <div class="popular-articles">
+                                <article class="popular-item">
+                                    <div class="popular-number">1</div>
+                                    <div class="popular-content">
+                                        <h4><a href="article/viral-story.html">The Story That Captivated Millions Worldwide</a></h4>
+                                        <div class="popular-meta">
+                                            <span><i class="fas fa-eye"></i> 2.5M views</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="popular-item">
+                                    <div class="popular-number">2</div>
+                                    <div class="popular-content">
+                                        <h4><a href="article/investigation.html">Exclusive Investigation Reveals Shocking Truth</a></h4>
+                                        <div class="popular-meta">
+                                            <span><i class="fas fa-eye"></i> 1.8M views</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="popular-item">
+                                    <div class="popular-number">3</div>
+                                    <div class="popular-content">
+                                        <h4><a href="article/celebrity-news.html">Celebrity Makes Surprising Announcement</a></h4>
+                                        <div class="popular-meta">
+                                            <span><i class="fas fa-eye"></i> 1.2M views</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="popular-item">
+                                    <div class="popular-number">4</div>
+                                    <div class="popular-content">
+                                        <h4><a href="article/tech-review.html">Comprehensive Review of Latest Tech Innovation</a></h4>
+                                        <div class="popular-meta">
+                                            <span><i class="fas fa-eye"></i> 950K views</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="popular-item">
+                                    <div class="popular-number">5</div>
+                                    <div class="popular-content">
+                                        <h4><a href="article/sports-upset.html">Biggest Sports Upset of the Decade</a></h4>
+                                        <div class="popular-meta">
+                                            <span><i class="fas fa-eye"></i> 780K views</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter Signup -->
+                        <div class="sidebar-widget newsletter-widget">
+                            <h3 class="widget-title">
+                                <i class="fas fa-envelope"></i> Stay Updated
+                            </h3>
+                            <p>Get the latest news delivered straight to your inbox.</p>
+                            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                                <input type="email" placeholder="Your email address" required>
+                                <button type="submit">
+                                    <i class="fas fa-paper-plane"></i> Subscribe
+                                </button>
+                            </form>
+                            <div class="newsletter-benefits">
+                                <div class="benefit-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Daily news digest</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Breaking news alerts</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Exclusive content</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Weather Widget -->
+                        <div class="sidebar-widget weather-widget">
+                            <h3 class="widget-title">
+                                <i class="fas fa-cloud-sun"></i> Weather
+                            </h3>
+                            <div class="weather-content" id="weatherWidget">
+                                <div class="weather-main">
+                                    <div class="weather-icon">
+                                        <i class="fas fa-sun"></i>
+                                    </div>
+                                    <div class="weather-temp">24°C</div>
+                                </div>
+                                <div class="weather-details">
+                                    <div class="weather-location">New York, NY</div>
+                                    <div class="weather-description">Partly Cloudy</div>
+                                    <div class="weather-stats">
+                                        <span><i class="fas fa-eye"></i> 10km</span>
+                                        <span><i class="fas fa-tint"></i> 65%</span>
+                                        <span><i class="fas fa-wind"></i> 12 km/h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Feed -->
+                        <div class="sidebar-widget social-widget">
+                            <h3 class="widget-title">
+                                <i class="fab fa-twitter"></i> Follow Us
+                            </h3>
+                            <div class="social-buttons">
+                                <a href="https://facebook.com/plsworldnews" class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <div class="social-info">
+                                        <span class="social-count">125K</span>
+                                        <span class="social-label">Followers</span>
+                                    </div>
+                                </a>
+                                <a href="https://twitter.com/plsworldnews" class="social-btn twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    <div class="social-info">
+                                        <span class="social-count">89K</span>
+                                        <span class="social-label">Followers</span>
+                                    </div>
+                                </a>
+                                <a href="https://instagram.com/plsworldnews" class="social-btn instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    <div class="social-info">
+                                        <span class="social-count">67K</span>
+                                        <span class="social-label">Followers</span>
+                                    </div>
+                                </a>
+                                <a href="https://youtube.com/plsworldnews" class="social-btn youtube">
+                                    <i class="fab fa-youtube"></i>
+                                    <div class="social-info">
+                                        <span class="social-count">45K</span>
+                                        <span class="social-label">Subscribers</span>
+                                    </div>
+                                                                  </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Sections -->
+        <section class="category-sections">
+            <div class="container">
+                <!-- Politics Section -->
+                <div class="category-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-landmark"></i> Politics</h2>
+                        <a href="politics.html" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-grid">
+                        <article class="category-card featured">
+                            <div class="card-image">
+                                <img src="assets/images/politics-1.jpg" alt="Politics News">
+                                <span class="category-tag politics">Politics</span>
+                            </div>
+                            <div class="card-content">
+                                <h3><a href="article/election-update.html">Presidential Election Campaign Intensifies</a></h3>
+                                <p>As the election approaches, candidates ramp up their campaigns with new policy proposals and public appearances...</p>
+                                <div class="card-meta">
+                                    <span class="author">Political Desk</span>
+                                    <span class="date">2 hours ago</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <div class="category-list">
+                            <article class="list-item">
+                                <h4><a href="article/senate-vote.html">Senate Passes Landmark Infrastructure Bill</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">4 hours ago</span>
+                                </div>
+                            </article>
+                            <article class="list-item">
+                                <h4><a href="article/diplomatic-meeting.html">High-Level Diplomatic Talks Resume</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">6 hours ago</span>
+                                </div>
+                            </article>
+                            <article class="list-item">
+                                <h4><a href="article/policy-reform.html">New Policy Reforms Announced</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">8 hours ago</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Section -->
+                <div class="category-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-microchip"></i> Technology</h2>
+                        <a href="technology.html" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-grid">
+                        <article class="category-card featured">
+                            <div class="card-image">
+                                <img src="assets/images/tech-1.jpg" alt="Technology News">
+                                <span class="category-tag technology">Technology</span>
+                            </div>
+                            <div class="card-content">
+                                <h3><a href="article/ai-advancement.html">AI Technology Reaches New Milestone</a></h3>
+                                <p>Breakthrough in artificial intelligence promises to revolutionize multiple industries with unprecedented capabilities...</p>
+                                <div class="card-meta">
+                                    <span class="author">Tech Team</span>
+                                    <span class="date">1 hour ago</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <div class="category-list">
+                            <article class="list-item">
+                                <h4><a href="article/cybersecurity.html">Major Cybersecurity Update Released</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">3 hours ago</span>
+                                </div>
+                            </article>
+                            <article class="list-item">
+                                <h4><a href="article/startup-funding.html">Tech Startup Secures Record Funding</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">5 hours ago</span>
+                                </div>
+                            </article>
+                            <article class="list-item">
+                                <h4><a href="article/innovation-award.html">Innovation Awards Recognize Excellence</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">7 hours ago</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Section -->
+                <div class="category-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-chart-line"></i> Business</h2>
+                        <a href="business.html" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-grid">
+                        <article class="category-card featured">
+                            <div class="card-image">
+                                <img src="assets/images/business-1.jpg" alt="Business News">
+                                <span class="category-tag business">Business</span>
+                            </div>
+                            <div class="card-content">
+                                <h3><a href="article/market-analysis.html">Stock Markets Hit Record Highs</a></h3>
+                                <p>Global financial markets continue their upward trajectory as investor confidence reaches new peaks...</p>
+                                <div class="card-meta">
+                                    <span class="author">Business Desk</span>
+                                    <span class="date">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <div class="category-list">
+                            <article class="list-item">
+                                <h4><a href="article/merger-announcement.html">Major Corporate Merger Announced</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">2 hours ago</span>
+                                </div>
+                            </article>
+                            <article class="list-item">
+                                <h4><a href="article/economic-forecast.html">Economic Forecast Shows Growth</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">4 hours ago</span>
+                                </div>
+                            </article>
+                            <article class="list-item">
+                                <h4><a href="article/trade-agreement.html">New Trade Agreement Finalized</a></h4>
+                                <div class="item-meta">
+                                    <span class="date">6 hours ago</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-play-circle"></i> Latest Videos</h2>
+                    <a href="videos.html" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/video-1.jpg" alt="Video Thumbnail">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-duration">5:32</div>
+                        </div>
+                        <div class="video-content">
+                            <h3><a href="video/breaking-analysis.html">Breaking News Analysis: What It Means</a></h3>
+                            <div class="video-meta">
+                                <span class="views"><i class="fas fa-eye"></i> 125K views</span>
+                                <span class="date">1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/video-2.jpg" alt="Video Thumbnail">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-duration">8:15</div>
+                        </div>
+                        <div class="video-content">
+                            <h3><a href="video/expert-interview.html">Expert Interview: Future Predictions</a></h3>
+                            <div class="video-meta">
+                                <span class="views"><i class="fas fa-eye"></i> 89K views</span>
+                                <span class="date">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/video-3.jpg" alt="Video Thumbnail">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-duration">12:45</div>
+                        </div>
+                        <div class="video-content">
+                            <h3><a href="video/documentary.html">Special Documentary: Behind the Scenes</a></h3>
+                            <div class="video-meta">
+                                <span class="views"><i class="fas fa-eye"></i> 67K views</span>
+                                <span class="date">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/video-4.jpg" alt="Video Thumbnail">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-duration">6:28</div>
+                        </div>
+                        <div class="video-content">
+                            <h3><a href="video/live-report.html">Live Report from the Scene</a></h3>
+                            <div class="video-meta">
+                                <span class="views"><i class="fas fa-eye"></i> 156K views</span>
+                                <span class="date">4 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About Section -->
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <img src="assets/images/logo-white.png" alt="PLS World News">
+                            <h3>PLS World News</h3>
+                        </div>
+                        <p>Your trusted source for breaking news, in-depth analysis, and comprehensive coverage of global events. We deliver truth with integrity and excellence.</p>
+                        <div class="footer-social">
+                            <a href="https://facebook.com/plsworldnews" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/plsworldnews" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/plsworldnews" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://youtube.com/plsworldnews" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/plsworldnews" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="advertise.html">Advertise</a></li>
+                            <li><a href="press-releases.html">Press Releases</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="footer-column">
+                        <h4>Categories</h4>
+                        <ul class="footer-links">
+                            <li><a href="world.html">World News</a></li>
+                            <li><a href="politics.html">Politics</a></li>
+                            <li><a href="technology.html">Technology</a></li>
+                            <li><a href="business.html">Business</a></li>
+                            <li><a href="sports.html">Sports</a></li>
+                            <li><a href="health.html">Health</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> 123 News Street, Media City, NY 10001</p>
+                            <p><i class="fas fa-phone"></i> +1 (555) NEWS-PLS</p>
+                            <p><i class="fas fa-envelope"></i> contact@plsworldnews.com</p>
+                            <p><i class="fas fa-fax"></i> +1 (555) 123-4567</p>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="footer-newsletter">
+                            <h5>Subscribe to Newsletter</h5>
+                            <form class="newsletter-form" onsubmit="subscribeFooterNewsletter(event)">
+                                <div class="newsletter-input">
+                                    <input type="email" placeholder="Your email" required>
+                                    <button type="submit">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>© 2024 PLS World News. All rights reserved.</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Newsletter Modal -->
+    <div class="modal" id="newsletterModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-envelope"></i> Subscribe to PLS World News</h3>
+                <button class="modal-close" onclick="closeNewsletterModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Stay informed with our daily newsletter featuring breaking news, analysis, and exclusive content.</p>
+                <form class="modal-newsletter-form" onsubmit="subscribeModalNewsletter(event)">
+                    <div class="form-group">
+                        <label for="modalEmail">Email Address</label>
+                        <input type="email" id="modalEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-of-service.html" target="_blank">Terms of Service</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="subscribe-btn">
+                        <i class="fas fa-paper-plane"></i> Subscribe Now
+                    </button>
+                </form>
+                <div class="newsletter-benefits">
+                    <h4>What you'll get:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Daily news digest</li>
+                        <li><i class="fas fa-check"></i> Breaking news alerts</li>
+                        <li><i class="fas fa-check"></i> Exclusive interviews</li>
+                        <li><i class="fas fa-check"></i> Weekly analysis reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/news.js"></script>
+    <script src="assets/js/newsletter.js"></script>
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
+
 
